@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/back"/>
+    <ImageView
+        android:layout_below="@id/back"
+        android:id="@+id/image_det"
+        android:layout_width="36dp"
+        android:layout_height="36dp" />
+    <TextView
+        android:id="@+id/details"
+        android:layout_below="@id/image_det"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/minus"
+        android:layout_below="@id/details"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"/>
+    <TextView
+        android:id="@+id/quan_dit"
+        android:layout_below="@id/details"
+        android:layout_toRightOf="@id/minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"/>
+    <Button
+        android:id="@+id/add"
+        android:layout_toRightOf="@id/quan_dit"
+        android:layout_below="@id/details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"/>
+    <Button
+        android:id="@+id/order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/minus"
+        android:layout_alignParentLeft="true"
+        android:text="@string/order"/>
+    <Button
+        android:id="@+id/del_item"
+        android:layout_below="@id/add"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"/>
+
+
+</RelativeLayout>
